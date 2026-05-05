@@ -50,8 +50,7 @@ VALUES (?, ?, ?, ?, ?)
             conn.close()
             message = "Амжилттай бүртгэгдлээ"
 
-    
-return render_template("templates/register.html", message=message, error=error)
+    return render_template("register.html", message=message, error=error)
 
 @app.route("/download")
 def download():
